@@ -14,7 +14,7 @@ class GetRequester
   def parse_json
     items = JSON.parse(self.get_response_body)
     items.collect do |item|
-      item["agency"]  
+      item["thing"]  
     end
   end
   
